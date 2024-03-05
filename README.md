@@ -29,10 +29,13 @@ Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 
 ## Docker
+```
 docker network create quacker-mongo
-docker run -d --network quacker-mongo -p 27017:27017 --name examen_andres mongo
-docker run -d --network quacker-mongo -p 5000:5000 --name web quacker 
 
+docker run -d --network quacker-mongo -p 27017:27017 --name examen_andres mongo
+
+docker run -d --network quacker-mongo -p 5000:5000 --name web quacker 
+```
 En el index se mostrará una tabla con los quacks de todos los usuarios, pero cuenta con una API que puedes utilizar para integrarla con tu propia aplicación o para desarrollar tu propio frontend.
 
 ### API REST
