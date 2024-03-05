@@ -8,6 +8,13 @@ Actualmente sin mantenimiento debido al éxito de la competencia. Si quieres hac
   - [TODO.md](TODO.md)
 
 ## Instrucciones de uso
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install flask
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
 Aplicación desarrollada en Python (v3.11) con Flask como dependencia principal.
 
     python app.py

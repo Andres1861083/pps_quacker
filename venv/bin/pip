@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /media/andresgz/SwapLinuxWindows/CETI-Temario/PPS/Tema_2.Implantacion_Sistemas_Seguros_Desplegado_Software/Examen/pps_quacker/venv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
